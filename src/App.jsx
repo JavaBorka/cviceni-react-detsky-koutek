@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet, Link } from 'react-router-dom'
 
 import './App.css'
 
@@ -6,7 +6,15 @@ function App() {
 
   return (
     <>
-      <h1>Cvičení router - dětský koutek</h1>
+      <header>
+        <h1>Cvičení router - dětský koutek</h1>
+      </header>
+
+      <nav>
+        <Link to='/'>Úvod</Link> | 
+        <Link to='/aboutus'>O nás</Link> | 
+        <Link to='/contact'>Kontakt</Link> | 
+      </nav>
 
       <main>
         <Outlet />

@@ -42,3 +42,9 @@
 .read-the-docs {
   color: #888;
 }
+
+main {
+  border: 5px solid silver;
+  margin: 2em 0;
+  padding: 1em;
+}
