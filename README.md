@@ -14,6 +14,8 @@ Spusťte aplikaci příkazem `npm start` a zkontrolujte, že vám v prohlížeč
 
 Nebojte se v následujících krocích inspirovat dokumentací React Routeru!
 
+https://reactrouter.com/en/main/start/overview
+
 V hlavním souboru `index.jsx` založte objekt s routami. Vytvořte si v tomto souboru komponentu `App`, která zatím bude obsahovat pouze nadpis stránky. Zobrazujte ji pod cestou `/`. Nezapomeňte použít `RouterProvider `ve funkci `render`. Vyzkoušejte, že takto vaše aplikace funguje.
 
 V adresáři pages už máte vygenerovanou komponentu HomePage. Ta by měla obshovat nadpis a text:
