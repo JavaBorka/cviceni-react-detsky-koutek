@@ -43,3 +43,28 @@ V komponentě `App` vytvořte navigaci pomocí `Link` komponent a dejte do ní o
 Vyzkoušejte, že aplikace správně naviguje - mění adresu a obsah podle klikání na odkazy.
 
 Pokud máte čas a chuť, přidejte na web zajímavější obsah dle libosti a nastylujte jednotlivé stránky i navigaci.
+
+
+# Cvičení 2 - pobočky dětského koutku
+Přidejte do projektu detail jednotlivých poboček
+
+Budeme pokračovat v projektu dětského koutku. Přidáme možnost zobrazit seznam poboček a každou pobočku rozkliknout pro získání více informaci.
+
+Pokračujte v projektu z předchozího cvičení.
+
+Nejprve do projektu přidejte stránku, která správně ošetří přístup na neexistující stránku, tedy chybu 404.
+
+Dále přidejte do navigace stránku Pobočky a vytvořte pro ni samostatnou komponentu `CentersPage`. Na této stránce budeme chtít zobrazit jednotlivé pobočky našeho dětského koutku (viz další bod).
+
+Rozjeďte si API server s daty. Naklonujte si k sobě repozitář api-centers a spusťte v něm jsonhost dle instrkukcí v README. Prohlédněte si data na endpointu /api/centers.
+https://github.com/Czechitas-podklady-WEB/api-centers
+
+V komponentě `CentersPage` si tytvořte stav center a do něj pomocí klasikého postupu s useEffect a fetch stáhněte pole dat z API. Pomocí mapování zobrazte seznam odkazů na jednotlivé pobočky. Odkaz bude vždy cesta /pobocky/id-pobocky. Zatím nezobrazujte detail pobočky, pouze její název a adresu. Tento seznam bude sloužit jako navigace mezi jednotlivými pobočkami.
+
+Vytvořte komponentu `CenterDetail` pro zobrazení detailu pobočky. Tato komponenta bude sídlit pod cestou /pobocky/:id. Pomocí useParams a API endpointu /api/centers/:id získejte položku podle parametru :id. Zobrazte detail pobočky s otvíracími hodinami i popisem.
+
+Komponentu `CenterDetail` zobrazte jako <Outlet /> uvnitř komponenty `CentersPage`.
+Nyní by měla stránka správně fungovat. Po kliknutí na pobočku se uživatel dostane na stránku s detailem každé pobočky. Zároveň na stránce uvidí hlavní navigaci i seznam ostatních poboček.
+
+Bonus
+Přidejte zajímavé featury z dokumentace. Například stylování odkazů podle toho, která stránka je zrovna aktivní. S tím nám pomůže komponenta NavLink.
