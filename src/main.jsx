@@ -4,6 +4,7 @@ import App from './App.jsx'
 import Homepage from './pages/Homepage/index.jsx'
 import About from './pages/About/index.jsx'
 import Contact from './pages/Contact/index.jsx'
+import ErrorPage from './pages/ErrorPage/index.jsx'
 import './index.css'
 
 import {
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
