@@ -3,6 +3,7 @@ import React from 'react'
 import App from './App.jsx'
 import Homepage from './pages/Homepage/index.jsx'
 import About from './pages/About/index.jsx'
+import Contact from './pages/Contact/index.jsx'
 import './index.css'
 
 import {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: 'aboutUs',
         element: <About />
+      },
+      {
+        path: 'contact',
+        element: <Contact />
       }
     ]
   }
