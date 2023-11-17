@@ -46,6 +46,7 @@ Pokud máte čas a chuť, přidejte na web zajímavější obsah dle libosti a n
 
 
 # Cvičení 2 - pobočky dětského koutku
+
 Přidejte do projektu detail jednotlivých poboček
 
 Budeme pokračovat v projektu dětského koutku. Přidáme možnost zobrazit seznam poboček a každou pobočku rozkliknout pro získání více informaci.
@@ -58,6 +59,8 @@ Dále přidejte do navigace stránku Pobočky a vytvořte pro ni samostatnou kom
 
 Rozjeďte si API server s daty. Naklonujte si k sobě repozitář api-centers a spusťte v něm jsonhost dle instrkukcí v README. Prohlédněte si data na endpointu /api/centers.
 https://github.com/Czechitas-podklady-WEB/api-centers
+
+Pozn.: použila jsem API https://swapi.dev/api/people
 
 V komponentě `CentersPage` si tytvořte stav center a do něj pomocí klasikého postupu s useEffect a fetch stáhněte pole dat z API. Pomocí mapování zobrazte seznam odkazů na jednotlivé pobočky. Odkaz bude vždy cesta /pobocky/id-pobocky. Zatím nezobrazujte detail pobočky, pouze její název a adresu. Tento seznam bude sloužit jako navigace mezi jednotlivými pobočkami.
 
