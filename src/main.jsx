@@ -5,6 +5,8 @@ import Homepage from './pages/Homepage/index.jsx'
 import About from './pages/About/index.jsx'
 import Contact from './pages/Contact/index.jsx'
 import ErrorPage from './pages/ErrorPage/index.jsx'
+import CentersPage from './pages/CentersPage/index.jsx'
+import CenterDetail from './pages/CenterDetail/index.jsx'
 import './index.css'
 
 import {
@@ -29,6 +31,16 @@ const router = createBrowserRouter([
       {
         path: 'contact',
         element: <Contact />
+      },
+      {
+        path: 'centers',
+        element: <CentersPage />,
+        children: [
+          {
+            path: ':id',
+            element: <CenterDetail />
+          }
+        ]
       }
     ]
   }

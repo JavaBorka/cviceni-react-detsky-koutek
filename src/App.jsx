@@ -13,7 +13,8 @@ function App() {
       <nav>
         <Link to='/'>Úvod</Link> | 
         <Link to='/aboutus'>O nás</Link> | 
-        <Link to='/contact'>Kontakt</Link> | 
+        <Link to='/contact'>Kontakt</Link> |
+        <Link to='/centers'>Pobočky</Link>
       </nav>
 
       <main>
